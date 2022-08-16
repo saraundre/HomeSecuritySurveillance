@@ -1,0 +1,25 @@
+Home Surveillance Security
+201969990099 Lam Sung Foon John Ryan
+201969990298 Sarah Sajid Undre 
+201969990084 Vondrea Cassey Andoko
+==========================
+
+Setup:
+1. Clone Yolov5 repository: 
+git clone https://github.com/ultralytics/yolov5  # clone
+cd yolov5
+
+2. In Telegram app, look for Bot Father API, register a new bot and save the token, 
+
+3. copy the following url and replace <TOKEN> with the generated token
+https://api.telegram.org/bot <TOKEN>/getUpdates
+
+4. Move the "best.pt" weights in the yolov5 folder
+
+5. Create a folder named "detected"
+
+6. Open the notebook and specify the path of the weight.
+
+7. Run the script
+
+Thank you
