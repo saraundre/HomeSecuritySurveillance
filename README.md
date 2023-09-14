@@ -1,62 +1,71 @@
 # HomeSecuritySurveillance
 
-Software Enginerring Course , 3rd Year 2nd Semester 
+## Overview
 
-Software Engineering Course Design Topic from China Telecom Guangdong Company 2022）
-             
-Topic:  Home security surveillance 
+This GitHub repository is dedicated to the Home Security Surveillance project, which is a part of the Software Engineering Course in the 3rd Year, 2nd Semester. The project's design topic is centered around Home Security Surveillance and is developed in collaboration with China Telecom Guangdong Company in 2022.
 
-*************************************************
-Background: 
-*************************************************
+## Background
 
- At present, there are more and more safety accidents in families, such as short circuit, fire, gas leakage, illegal intrusion and other scenes. It is worth exploring to methods of home security surveillance based on videos from home installed cameras. It combines with AI analysis and training algorithms to solve the problem of home AI safety monitoring.
- 
-This system realizes the functions of monitoring, identification and alarm of key areas and specific scenes of the family with video technology, combined with AI analysis and training algorithm:
+In contemporary times, the safety of households is becoming increasingly important due to various safety hazards such as short circuits, fires, gas leaks, and unauthorized intrusions. This project explores innovative methods for enhancing home security through video feeds from installed home cameras. It combines video technology with advanced AI analysis and training algorithms to address the challenge of AI-based home safety monitoring.
 
+The system's primary objectives include:
 
-(1) It detects smoke and flame, and raises the alarm. 
+1. **Smoke and Flame Detection**: The system can detect the presence of smoke and flames, triggering alarms in case of fire hazards.
 
-(2) The room entrants are detected within a specified period of time. It raises the alarm when strangers break in.
+2. **Intrusion Detection**: It is capable of identifying unauthorized individuals entering specific areas within a specified time frame and raising alarms when strangers intrude.
 
+## References
 
-*************************************************
-References:
-*************************************************
-Video processing, recognition algorithm with AI
-Hardware requirements:
-PC 1: 2C 16GB memory 100GB hard drive, camera.
-Data requirements: not
-Test environment: The network is connected
+- The project makes use of video processing and recognition algorithms with AI.
 
+## Hardware Requirements
 
-*************************************************
-Home Surveillance Security System SETUP 
+- PC 1: 
+  - CPU: 2 cores
+  - RAM: 16GB
+  - Storage: 100GB hard drive
+  - Camera
 
-*************************************************
-1. Clone Yolov5 repository: 
+## Data Requirements
 
-git clone https://github.com/ultralytics/yolov5  # clone
-cd yolov5
+No specific data requirements are necessary for this project.
 
+## Test Environment
 
-2. In Telegram app, look for Bot Father API, register a new bot and save the token, 
+The system is designed to operate in a network-connected environment.
 
+## Home Surveillance Security System Setup
 
-3. copy the following url and replace <TOKEN> with the generated token
-https://api.telegram.org/bot <TOKEN>/getUpdates
+Follow these steps to set up the Home Surveillance Security System:
 
-  
-4. Move the "best.pt" weights in the yolov5 folder
+1. **Clone Yolov5 Repository**: 
+   - Clone the Yolov5 repository by running the following command:
+     ```bash
+     git clone https://github.com/ultralytics/yolov5  # clone
+     cd yolov5
+     ```
 
-  
-5. Create a folder named "detected"
+2. **Telegram Bot API Setup**:
+   - In the Telegram app, locate the Bot Father API, register a new bot, and save the generated token.
 
-  
-6. Open the notebook and specify the path of the weight.
+3. **Configure Telegram API**:
+   - Copy the following URL and replace `<TOKEN>` with the generated token:
+     ```
+     https://api.telegram.org/bot<TOKEN>/getUpdates
+     ```
 
-  
-7. Run the script
+4. **Move Weight Files**:
+   - Move the "best.pt" weights to the yolov5 folder.
 
+5. **Create "detected" Folder**:
+   - Create a folder named "detected" within the project directory.
 
+6. **Open Notebook and Specify Path**:
+   - Open the notebook and specify the path to the weight file.
 
+7. **Run the Script**:
+   - Execute the script to start the home surveillance security system.
+
+---
+
+**Note**: For any questions, issues, or feedback, please don't hesitate to reach out or open an issue in this repository.
